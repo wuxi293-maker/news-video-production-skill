@@ -2,10 +2,18 @@
 
 从飞书脚本到 Remotion 成片的竖屏资讯短视频工作流，可跨环境安装。
 
+- 版本：v1.0（2026-11-26）
 - 技能名：`news-video-production`
 - 中文名：资讯视频制作
 - 调用：`$news-video-production`
-- 核心规则：每镜固定 3 秒；1080×1920 / 30fps / 12Mbps；T01/T02/T03 包装；Remotion 合成；抖音热门 BGM；本地保留 v1/v2 全部版本。
+- 核心规则：资讯模板默认每镜 3 秒；1080×1920 / 30fps / 12Mbps；T01/T02/T03 包装；Remotion 合成；抖音热门 BGM；本地保留 v1/v2 全部版本。
+
+## 直接给 AI 助手
+
+- 仓库主页：https://github.com/wuxi293-maker/news-video-production-skill
+- 一键下载 zip：https://github.com/wuxi293-maker/news-video-production-skill/archive/refs/heads/main.zip
+- 原始 `SKILL.md`：https://raw.githubusercontent.com/wuxi293-maker/news-video-production-skill/main/news-video-production/SKILL.md
+- 安装提示词：https://raw.githubusercontent.com/wuxi293-maker/news-video-production-skill/main/%E5%AE%89%E8%A3%85%E6%8F%90%E7%A4%98%E8%AF%8D.md
 
 ## 快速安装
 
