@@ -1,0 +1,7 @@
+interface:
+  display_name: "资讯视频制作"
+  short_description: "从飞书脚本到 Remotion 成片的资讯短视频工作流"
+  default_prompt: "使用 $news-video-production 帮我完成资讯短视频制作"
+
+policy:
+  allow_implicit_invocation: true
