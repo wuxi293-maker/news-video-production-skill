@@ -13,7 +13,7 @@
 - 仓库主页：https://github.com/wuxi293-maker/news-video-production-skill
 - 一键下载 zip：https://github.com/wuxi293-maker/news-video-production-skill/archive/refs/heads/main.zip
 - 原始 `SKILL.md`：https://raw.githubusercontent.com/wuxi293-maker/news-video-production-skill/main/news-video-production/SKILL.md
-- 安装提示词：https://raw.githubusercontent.com/wuxi293-maker/news-video-production-skill/main/%E5%AE%89%E8%A3%85%E6%8F%90%E7%A4%98%E8%AF%8D.md
+- 安装提示词：https://raw.githubusercontent.com/wuxi293-maker/news-video-production-skill/main/%E5%AE%89%E8%A3%85%E6%8F%90%E7%A4%BA%E8%AF%8D.md
 
 ## 快速安装
 
