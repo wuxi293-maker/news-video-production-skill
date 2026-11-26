@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#061a16"/>
+      <stop offset="0.55" stop-color="#0c3b32"/>
+      <stop offset="1" stop-color="#145c4b"/>
+    </linearGradient>
+  </defs>
+  <rect width="1080" height="1920" fill="url(#bg)"/>
+  <path d="M0 1450 C260 1280 420 1580 700 1400 C860 1300 940 1360 1080 1280 L1080 1920 L0 1920 Z" fill="#34d399" opacity="0.12"/>
+  <circle cx="860" cy="460" r="240" fill="#a7f3d0" opacity="0.12"/>
+  <circle cx="220" cy="900" r="160" fill="#6ee7b7" opacity="0.1"/>
+  <text x="80" y="1700" fill="#ecfdf5" font-family="Noto Sans CJK SC, Source Han Sans SC, sans-serif" font-size="54" font-weight="700">示例素材 3</text>
+  <text x="80" y="1772" fill="#a7f3d0" font-family="Noto Sans CJK SC, Source Han Sans SC, sans-serif" font-size="32">图片与实拍片段混用，素材不重复</text>
+</svg>

@@ -1,0 +1,23 @@
+{
+  "name": "news-video-remotion-starter",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "predev": "node scripts/ensure-bgm.mjs",
+    "prerender": "node scripts/ensure-bgm.mjs",
+    "dev": "remotion studio src/index.ts",
+    "render": "remotion render src/index.ts NewsVideo out/master.mp4 --codec=h264 --crf=16 --pixel-format=yuv420p --concurrency=1",
+    "still": "remotion still src/index.ts NewsVideo out/cover.png --frame=0"
+  },
+  "dependencies": {
+    "@remotion/cli": "^4.0.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "remotion": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.1",
+    "@types/react-dom": "^18.3.1",
+    "typescript": "^5.0.0"
+  }
+}

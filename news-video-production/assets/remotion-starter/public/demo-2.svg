@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1a0b06"/>
+      <stop offset="0.5" stop-color="#3b160b"/>
+      <stop offset="1" stop-color="#6b2a12"/>
+    </linearGradient>
+  </defs>
+  <rect width="1080" height="1920" fill="url(#bg)"/>
+  <rect x="120" y="380" width="840" height="620" rx="42" fill="#f97316" opacity="0.22"/>
+  <rect x="180" y="1240" width="720" height="320" rx="36" fill="#fbbf24" opacity="0.18"/>
+  <g fill="#fdba74" opacity="0.55">
+    <circle cx="220" cy="300" r="18"/><circle cx="300" cy="300" r="18"/><circle cx="380" cy="300" r="18"/>
+    <circle cx="700" cy="1680" r="18"/><circle cx="780" cy="1680" r="18"/><circle cx="860" cy="1680" r="18"/>
+  </g>
+  <text x="80" y="1700" fill="#ffedd5" font-family="Noto Sans CJK SC, Source Han Sans SC, sans-serif" font-size="54" font-weight="700">示例素材 2</text>
+  <text x="80" y="1772" fill="#fdba74" font-family="Noto Sans CJK SC, Source Han Sans SC, sans-serif" font-size="32">切换时加交叉淡入，不改变 3 秒切点</text>
+</svg>
