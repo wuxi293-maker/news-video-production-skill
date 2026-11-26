@@ -81,9 +81,9 @@ export const NewsVideo = ({ shots }) => {
 };
 ```
 
-- `durationInFrames` 必须是 `shots.length * 90`。
-- 每镜 `Sequence` 的 `from` 必须是 `i*90`；不要用 100、120 等时长。
-- 总时长改不了单镜；只能增删 `shots`。
+- `durationInFrames` 必须是 `shots.length * 90`（资讯模板）；口播/访谈按实际语音帧数。
+- 每镜 `Sequence` 的 `from` 必须是 `i*90`（资讯模板）；口播按语音切点排，不强制 90 帧。
+- 资讯模板总时长改不了单镜；只能增删 `shots`；口播按语音节奏增删/裁切。
 
 ## 3. 固定标题与卡片
 
