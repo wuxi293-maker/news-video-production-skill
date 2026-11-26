@@ -33,6 +33,7 @@ def main():
     p.add_argument("--min-bitrate", type=float, default=10.0)
     p.add_argument("--max-bitrate", type=float, default=14.0)
     p.add_argument("--allow-no-audio", action="store_true")
+    p.add_argument("--no-duration-check", action="store_true", help="skip 3-second duration rules for voice-paced edits")
     args = p.parse_args()
 
     info = ffprobe(args.video)
@@ -68,17 +69,18 @@ def main():
         if abs(fps - args.fps) > 0.01:
             errors.append(f"fps {fps:.4f}, expected {args.fps}")
 
-        if args.shots:
-            expected = args.shots * 3.0
-            checks["expected_duration"] = expected
-            checks["expected_frames"] = args.shots * 90
-            if abs(duration - expected) > 0.15:
-                errors.append(f"duration {duration:.3f}s, expected {expected:.3f}s for {args.shots} shots")
-            if frames and abs(frames - args.shots * 90) > 2:
-                errors.append(f"frames {frames}, expected {args.shots * 90}")
-        else:
-            if abs(duration - round(duration / 3) * 3) > 0.2:
-                errors.append(f"duration {duration:.3f}s is not a multiple of 3s")
+        if not args.no_duration_check:
+            if args.shots:
+                expected = args.shots * 3.0
+                checks["expected_duration"] = expected
+                checks["expected_frames"] = args.shots * 90
+                if abs(duration - expected) > 0.15:
+                    errors.append(f"duration {duration:.3f}s, expected {expected:.3f}s for {args.shots} shots")
+                if frames and abs(frames - args.shots * 90) > 2:
+                    errors.append(f"frames {frames}, expected {args.shots * 90}")
+            else:
+                if abs(duration - round(duration / 3) * 3) > 0.2:
+                    errors.append(f"duration {duration:.3f}s is not a multiple of 3s")
 
         if args.min_bitrate and checks["bitrate_mbps"] < args.min_bitrate:
             errors.append(f"bitrate {checks['bitrate_mbps']} Mbps below {args.min_bitrate}")
